@@ -4,7 +4,7 @@
 
 <div class="card">
   <div class="card-content">
-    <h3>Latest development version: v0.6
+    <h3>Latest development version: v0.8
     <p id="latest-version"></p>
   </div>
 </div>
