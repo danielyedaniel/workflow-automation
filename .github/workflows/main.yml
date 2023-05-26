@@ -25,9 +25,14 @@ jobs:
           echo "Latest tag version: $TAG_VERSION"
           echo "TAG_VERSION=$TAG_VERSION" >> $GITHUB_ENV
 
+      - name: Update README 
+        run: |
+          sed "s/version: .*/version: $TAG_VERSION/g" README.md > README.md.tmp          
+          mv README.md.tmp README.md
+
       - name: Update README
         run: |
-          sed "s/version: .*/version: $TAG_VERSION/g" README.md | sed "s/version-*-blue/version-$TAG_VERSION-blue/g" README.md > README.md.tmp
+          sed "s/version-*-blue/version-$TAG_VERSION-blue/g" README.md > README.md.tmp          
           mv README.md.tmp README.md
 
       - name: Commit files
