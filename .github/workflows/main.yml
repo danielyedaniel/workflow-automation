@@ -27,7 +27,7 @@ jobs:
 
       - name: Update README
         run: |
-          sed "s/version: .*/version: $TAG_VERSION/g" README.md > README.md.tmp
+          sed -i "s/version: .*/version: $TAG_VERSION/g" README.md > README.md.tmp
           mv README.md.tmp README.md
 
       - name: Commit files
