@@ -1,0 +1,44 @@
+name: Test Workflow
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      TAG_VERSION: ""
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get latest tag version
+        id: get_tag
+        run: |
+          TAG_VERSION=$(git describe --tags --abbrev=0)
+          if [ -z "$TAG_VERSION" ]; then
+            echo "No tags found."
+            exit 1
+          fi
+          echo "Latest tag version: $TAG_VERSION"
+          echo "TAG_VERSION=$TAG_VERSION" >> $GITHUB_ENV
+
+      - name: Update README
+        run: |
+          sed "s/version: .*/version: $TAG_VERSION/g" README.md > README.md.tmp
+          mv README.md.tmp README.md
+
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "Update version in README"
+
+      - name: Push changes
+        run: |
+          git push origin HEAD:refs/heads/main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
