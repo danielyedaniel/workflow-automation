@@ -1,5 +1,8 @@
 # workflow-automation
 
+![Custom Badge](./badge.svg)
+
+
 [![Latest Development Version](https://img.shields.io/badge/version-v5.0-blue)](https://github.com/danielyedaniel/test)
 
 <div class="card">
