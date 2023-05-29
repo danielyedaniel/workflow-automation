@@ -8,3 +8,7 @@
     <p id="latest-version"></p>
   </div>
 </div>
+
+ <svg xmlns="http://www.w3.org/2000/svg" width="120" height="20">
+  <rect width="120" height="20" fill="#555"/>
+</svg>
