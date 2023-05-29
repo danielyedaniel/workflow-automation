@@ -11,8 +11,11 @@ jobs:
       TAG_VERSION: ""
 
     steps:
-      - name: Update version in README
+      - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Update version in README
+        id: change version
         run: |
           TAG_VERSION=$(git describe --tags --abbrev=0)
           if [ -z "$TAG_VERSION" ]; then
@@ -30,4 +33,8 @@ jobs:
           git push origin HEAD:refs/heads/main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+
+
 
