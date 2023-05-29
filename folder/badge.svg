@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="220" height="20">
+<sv0.0.1+5
   <linearGradient id="b" x2="0" y2="100%">
     <stop offset="0" stop-color="#555" stop-opacity=".1"/>
     <stop offset="1" stop-opacity=".1"/>
@@ -7,14 +7,14 @@
     <rect width="220" height="20" rx="3" fill="#fff"/>
   </mask>
   <g mask="url(#a)">
-    <path fill="#555" d="M0 0h130v20H0z"/>
-    <path fill="#97CA00" d="M130 0h90v20h-90z"/>
-    <path fill="url(#b)" d="M0 0h220v20H0z"/>
+    <path fill="#555" d="M0 0h130v0.0.1+5
+    <path fill="#97CA00" d="M130 0h90v0.0.1+5
+    <path fill="url(#b)" d="M0 0h220v0.0.1+5
   </g>
-  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">
-    <text x="65" y="15" fill="#010101" fill-opacity=".3">Development Version</text>
-    <text x="190" y="15" fill="#010101" fill-opacity=".3" text-anchor="end">v0.0.1+3</text>
-    <text x="65" y="14">Development Version</text>
-    <text x="190" y="14" text-anchor="end">v0.0.1+3</text>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Genev0.0.1+5
+    <text x="65" y="15" fill="#010101" fill-opacity=".3">Dev0.0.1+5
+    <text x="190" y="15" fill="#010101" fill-opacity=".3" text-anchor="end">v0.0.1+5
+    <text x="65" y="14">Dev0.0.1+5
+    <text x="190" y="14" text-anchor="end">v0.0.1+5
   </g>
-</svg>
+</sv0.0.1+5
