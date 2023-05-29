@@ -12,9 +12,9 @@
     <path fill="url(#b)" d="M0 0h120v20H0z"/>
   </g>
   <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">
-    <text x="33.5" y="15" fill="#010101" fill-opacity=".3">Custom</text>
-    <text x="33.5" y="14">Custom</text>
-    <text x="92.5" y="15" fill="#010101" fill-opacity=".3">Badge</text>
-    <text x="92.5" y="14">Badge</text>
+    <text x="33.5" y="15" fill="#010101" fill-opacity=".3">Development Version</text>
+    <text x="33.5" y="14">Development Version</text>
+    <text x="92.5" y="15" fill="#010101" fill-opacity=".3">v0.0.1+3</text>
+    <text x="92.5" y="14">v0.0.1+3</text>
   </g>
 </svg>
