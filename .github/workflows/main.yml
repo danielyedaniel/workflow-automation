@@ -11,11 +11,8 @@ jobs:
       TAG_VERSION: ""
 
     steps:
-      - name: Checkout repository
+      - name: Update version in README
         uses: actions/checkout@v2
-
-      - name: Get latest tag version
-        id: get_tag
         run: |
           TAG_VERSION=$(git describe --tags --abbrev=0)
           if [ -z "$TAG_VERSION" ]; then
@@ -24,31 +21,13 @@ jobs:
           fi
           echo "Latest tag version: $TAG_VERSION"
           echo "TAG_VERSION=$TAG_VERSION" >> $GITHUB_ENV
-
-      - name: Update README 
-        run: |
           sed 's/v[0-9].[0-9].[0-9]+[0-9]/'"$TAG_VERSION"'/g' ./folder/badge.svg > ./folder/badge.svg.tmp     
           mv ./folder/badge.svg.tmp ./folder/badge.svg
-
-      # - name: Update README
-      #   run: |
-      #     sed "s/version-[^-]*-blue/version-$TAG_VERSION-blue/g" README.md > README.md.tmp          
-      #     mv README.md.tmp README.md
-
-      - name: Commit files
-        run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add ./folder/badge.svg
           git commit -m "Update version in README"
-
-      - name: Push changes
-        run: |
           git push origin HEAD:refs/heads/main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-
-
 
