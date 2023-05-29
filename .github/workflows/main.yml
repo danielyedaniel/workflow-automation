@@ -22,6 +22,7 @@ jobs:
           fi
           echo "Latest tag version: $TAG_VERSION"
           TAG_VERSION=${TAG_VERSION:12}
+          echo "Latest tag version: $TAG_VERSION"
           sed 's/v[0-9].[0-9].[0-9]+[0-9]/'"$TAG_VERSION"'/g' ./folder/badge.svg > ./folder/badge.svg.tmp     
           mv ./folder/badge.svg.tmp ./folder/badge.svg
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
