@@ -27,13 +27,13 @@ jobs:
 
       - name: Update README 
         run: |
-          sed "s/version: .*/version: $TAG_VERSION/g" README.md > README.md.tmp          
-          mv README.md.tmp README.md
+          sed "s/v.*.*.*+*/$TAG_VERSION/g" ./folder/badge.svg > ./folder/badge.svg.tmp     
+          mv ./folder/badge.svg.tmp ./folder/badge.svg
 
-      - name: Update README
-        run: |
-          sed "s/version-[^-]*-blue/version-$TAG_VERSION-blue/g" README.md > README.md.tmp          
-          mv README.md.tmp README.md
+      # - name: Update README
+      #   run: |
+      #     sed "s/version-[^-]*-blue/version-$TAG_VERSION-blue/g" README.md > README.md.tmp          
+      #     mv README.md.tmp README.md
 
       - name: Commit files
         run: |
