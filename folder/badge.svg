@@ -13,8 +13,8 @@
   </g>
   <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">
     <text x="65" y="15" fill="#010101" fill-opacity=".3">Development Version</text>
-    <text x="190" y="15" fill="#010101" fill-opacity=".3" text-anchor="end">v0.0.2+1</text>
+    <text x="190" y="15" fill="#010101" fill-opacity=".3" text-anchor="end">v0.0.2+4</text>
     <text x="65" y="14">Development Version</text>
-    <text x="190" y="14" text-anchor="end">v0.0.2+1</text>
+    <text x="190" y="14" text-anchor="end">v0.0.2+4</text>
   </g>
 </svg>
