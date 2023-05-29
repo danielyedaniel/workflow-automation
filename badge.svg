@@ -11,10 +11,10 @@
     <path fill="#97CA00" d="M130 0h90v20h-90z"/>
     <path fill="url(#b)" d="M0 0h220v20H0z"/>
   </g>
-  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">
-    <text x="65" y="15" fill="#010101" fill-opacity=".3">Development Version</text>
-    <text x="190" y="15" fill="#010101" fill-opacity=".3">v0.0.1+3</text>
-    <text x="65" y="14">Development Version</text>
-    <text x="190" y="14">v0.0.1+3</text>
+  <g fill="#fff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">
+    <text x="65" y="15" fill="#010101" fill-opacity=".3" text-anchor="middle" dominant-baseline="central">Development Version</text>
+    <text x="190" y="15" fill="#010101" fill-opacity=".3" text-anchor="middle" dominant-baseline="central">v0.0.1+3</text>
+    <text x="65" y="14" text-anchor="middle" dominant-baseline="central">Development Version</text>
+    <text x="190" y="14" text-anchor="middle" dominant-baseline="central">v0.0.1+3</text>
   </g>
 </svg>
